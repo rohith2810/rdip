@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <a href="https://www.iiit.ac.in/"><img src="https://www.iiit.ac.in/img/iiit-new.png" alt="IIIT Hyderabad" height="70" width="110"></a>
+        <a href="https://serc.iiit.ac.in/rdip">RDIP</a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="registration.html">Registraion Form</a></li>
+        </ul>
+        <form action="details.html">
+        <table>
+            <tr>
+                <td>First name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone No:</td>
+                <td><input type="number" id="phn"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="other" id="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Reason for RDIP:</td>
+                <td>
+                    <input type="radio" name="reason" value="html" id="html">
+                    <label for="html">HTML</label>
+                    <input type="radio" name="reason" value="css" id="css">
+                    <label for="css">CSS</label>
+                    <input type="radio" name="reason" value="js" id="js">
+                    <label for="js">JavaScript</label>
+                </td>
+            </tr>
+            <tr>
+                <td>College:</td>
+                <td><input type="text" id="clg"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="declaration"></td>
+                <td>I declare above details given by me are true.</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
