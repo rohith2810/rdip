@@ -2,6 +2,51 @@
 <html>
     <head>
     <title>Home Page</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        ul{
+            display: block;
+            list-style-type: none;
+            background-color: black;
+            padding: 10px;
+        }
+        li{
+            display: inline;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        li a,li a:visited{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        li:hover{
+            background-color: darkred;
+        }
+        a[href*=serc],a[href*=serc]:visited{
+            font-size: 20px;
+            text-decoration: none;
+            float: right;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+        img[src*=Rohith]{
+            float: right;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table, th, td{
+            text-align: center;
+            border: 2px solid black;
+        }
+        th, td{
+            padding: 7px;
+        }
+    </style>
     </head>
     <body>
         <a href="https://www.iiit.ac.in/"><img src="https://www.iiit.ac.in/img/iiit-new.png" alt="IIIT Hyderabad" height="70" width="110"></a>
@@ -10,8 +55,9 @@
             <li><a href="homepage.html">Home</a></li>
             <li><a href="registration.html">Registraion Form</a></li>
         </ul>
+        <img src="Rohith.jpeg" alt="Rohith" height="250px" width="150px">
         <h3>My Details</h3>
-        <table>
+        <table cell>
             <tr>
                 <td>Name</td>
                 <td>Naga Sai Rohith</td>

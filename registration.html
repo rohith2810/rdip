@@ -2,6 +2,48 @@
 <html>
     <head>
         <title>Registration Form</title>
+        <style>
+        body{
+            background-color: whitesmoke;
+        }
+        ul{
+            display: block;
+            list-style-type: none;
+            background-color: black;
+            padding: 10px;
+        }
+        li{
+            display: inline;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        li a,li a:visited{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        li:hover{
+            background-color: darkred;
+        }
+        a[href*=serc],a[href*=serc]:visited{
+            font-size: 20px;
+            text-decoration: none;
+            float: right;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+        input[type=text], input[type=number], input[type=email]{
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: whitesmoke;
+        }
+        input[type=submit], input[type=reset]{
+            border: none;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        </style>
     </head>
     <body>
         <a href="https://www.iiit.ac.in/"><img src="https://www.iiit.ac.in/img/iiit-new.png" alt="IIIT Hyderabad" height="70" width="110"></a>
@@ -10,48 +52,48 @@
             <li><a href="homepage.html">Home</a></li>
             <li><a href="registration.html">Registraion Form</a></li>
         </ul>
-        <form action="details.html">
+        <form action="details.html" method="GET">
         <table>
             <tr>
                 <td>First name:</td>
-                <td><input type="text" id="name"></td>
+                <td><input type="text" id="name" required></td>
             </tr>
             <tr>
                 <td>E-mail:</td>
-                <td><input type="email" id="email"></td>
+                <td><input type="email" id="email" required></td>
             </tr>
             <tr>
                 <td>Phone No:</td>
-                <td><input type="number" id="phn"></td>
+                <td><input type="number" id="phn" required></td>
             </tr>
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <input type="radio" name="gender" value="male" id="male">
+                    <input type="radio" name="gender" value="male" id="male" required>
                     <label for="male">Male</label>
-                    <input type="radio" name="gender" value="female" id="female">
+                    <input type="radio" name="gender" value="female" id="female" required>
                     <label for="female">Female</label>
-                    <input type="radio" name="gender" value="other" id="other">
+                    <input type="radio" name="gender" value="other" id="other" required>
                     <label for="other">Other</label>
                 </td>
             </tr>
             <tr>
                 <td>Reason for RDIP:</td>
                 <td>
-                    <input type="radio" name="reason" value="html" id="html">
+                    <input type="radio" name="reason" value="html" id="html" required>
                     <label for="html">HTML</label>
-                    <input type="radio" name="reason" value="css" id="css">
+                    <input type="radio" name="reason" value="css" id="css" required>
                     <label for="css">CSS</label>
-                    <input type="radio" name="reason" value="js" id="js">
+                    <input type="radio" name="reason" value="js" id="js" required>
                     <label for="js">JavaScript</label>
                 </td>
             </tr>
             <tr>
                 <td>College:</td>
-                <td><input type="text" id="clg"></td>
+                <td><input type="text" id="clg" required></td>
             </tr>
             <tr>
-                <td><input type="checkbox" id="declaration"></td>
+                <td><input type="checkbox" id="declaration" required></td>
                 <td>I declare above details given by me are true.</td>
             </tr>
             <tr>
